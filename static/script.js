@@ -15,7 +15,8 @@ document.getElementById('predictionForm').addEventListener('submit', async (e) =
     
     try {
         // Send data to Flask backend
-        const response = await fetch('https://cardioml-1.onrender.com//predict', {
+        const response = await fetch('https://cardioml-1.onrender.com/predict', {
+            
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
